@@ -14,7 +14,7 @@ export default function Send({ text, containerStyle, onSend, children, textStyle
         accessibilityLabel="send"
         style={[styles.container, containerStyle]}
         onPress={() => {
-          onSend({ text: text.trim() }, true);
+          if (text.trim().length > 0) onSend({ text: text.trim() }, true);
         }}
         accessibilityTraits="button"
       >
@@ -24,6 +24,7 @@ export default function Send({ text, containerStyle, onSend, children, textStyle
   }
   return <View />;
 }
+
 
 const styles = StyleSheet.create({
   container: {
@@ -48,7 +49,6 @@ Send.defaultProps = {
   containerStyle: {},
   textStyle: {},
   children: null,
-  alwaysShowSend: false,
 };
 
 Send.propTypes = {
@@ -58,5 +58,4 @@ Send.propTypes = {
   containerStyle: ViewPropTypes.style,
   textStyle: Text.propTypes.style,
   children: PropTypes.element,
-  alwaysShowSend: PropTypes.bool,
 };
