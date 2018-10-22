@@ -5,7 +5,8 @@ import React from 'react';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
 import Color from './Color';
 
-const { carrot, emerald, peterRiver, wisteria, alizarin, turquoise, midnightBlue } = Color;
+const { pinkBeam } = Color;
+// const { carrot, emerald, peterRiver, wisteria, alizarin, turquoise, midnightBlue } = Color;
 // TODO
 // 3 words name initials
 // handle only alpha numeric chars
@@ -29,7 +30,8 @@ export default class GiftedAvatar extends React.PureComponent {
 
     // inspired by https://github.com/wbinnssmith/react-user-avatar
     // colors from https://flatuicolors.com/
-    const colors = [carrot, emerald, peterRiver, wisteria, alizarin, turquoise, midnightBlue];
+    // const colors = [carrot, emerald, peterRiver, wisteria, alizarin, turquoise, midnightBlue];
+    const colors = [ pinkBeam ];
 
     this.avatarColor = colors[sumChars % colors.length];
   }
