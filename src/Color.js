@@ -13,5 +13,6 @@ export default {
   midnightBlue: '#2c3e50',
   optionTintColor: '#007AFF',
   timeTextColor: '#aaa',
-  pinkBeam: '#CF296B'
+  pinkBeam: '#CF296B',
+  brightGreenBeam: '#41B7B6',
 };
