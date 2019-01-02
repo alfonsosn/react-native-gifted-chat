@@ -525,6 +525,7 @@ GiftedChat.defaultProps = {
   renderAvatar: undefined,
   showUserAvatar: false,
   onPressAvatar: null,
+  renderUsernameOnMessage: false,
   renderAvatarOnTop: false,
   renderBubble: null,
   renderSystemMessage: null,
@@ -533,6 +534,7 @@ GiftedChat.defaultProps = {
   renderMessageText: null,
   renderMessageImage: null,
   imageProps: {},
+  videoProps: {},
   lightboxProps: {},
   textInputProps: {},
   listViewProps: {},
@@ -557,6 +559,7 @@ GiftedChat.defaultProps = {
   maxInputLength: null,
   forceGetKeyboardHeight: false,
   inverted: true,
+  extraData: null,
 };
 
 GiftedChat.propTypes = {
@@ -578,6 +581,7 @@ GiftedChat.propTypes = {
   renderAvatar: PropTypes.func,
   showUserAvatar: PropTypes.bool,
   onPressAvatar: PropTypes.func,
+  renderUsernameOnMessage: PropTypes.bool,
   renderAvatarOnTop: PropTypes.bool,
   renderBubble: PropTypes.func,
   renderSystemMessage: PropTypes.func,
@@ -586,6 +590,7 @@ GiftedChat.propTypes = {
   renderMessageText: PropTypes.func,
   renderMessageImage: PropTypes.func,
   imageProps: PropTypes.object,
+  videoProps: PropTypes.object,
   lightboxProps: PropTypes.object,
   renderCustomView: PropTypes.func,
   renderDay: PropTypes.func,
@@ -607,6 +612,7 @@ GiftedChat.propTypes = {
   forceGetKeyboardHeight: PropTypes.bool,
   inverted: PropTypes.bool,
   textInputProps: PropTypes.object,
+  extraData: PropTypes.object,
 };
 
 export {
